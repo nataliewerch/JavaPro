@@ -37,10 +37,8 @@ public class MyArrayList implements List<Integer> {
 
     @Override
     public void clear() {
-        for (int i = 0; i < size; i++) {
-            array[i] = null;
-        }
         size = 0;
+        array = new Integer[0];
     }
 
     @Override
